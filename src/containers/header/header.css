@@ -36,6 +36,11 @@
     display: flex;
 }
 
+.gpt5__header-content__input button:hover {
+    background-color: #742103;
+    color: #fff;
+}
+
 .gpt5__header-content__input input {
     flex: 2;
     width: 100%;
@@ -132,4 +137,21 @@
         font-size: 16px;
         line-height: 24px;
     }
+}
+
+@media screen and (max-width: 490px) {
+    .gpt5__header h1 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    
+        .gpt5__header p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+             .gpt5__header-content__input input,
+            .gpt5__header-content__input button {
+                font-size: 11px;
+                line-height: 16px;
+            }
 }

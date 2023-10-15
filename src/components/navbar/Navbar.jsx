@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div className='gpt5__navbar'>
-            <div className='gpt5__navbar-links'>
+            <div className='gpt5__navbar-links hover:gradient__text'>
                 <div className='gpt5__navbar-links_logo'>
                     <h1 >GPT-5</h1>
                 </div>

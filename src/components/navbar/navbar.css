@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 2rem 6rem;
 }
 
@@ -10,7 +9,11 @@
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;  
+}
+
+.gpt5__navbar-links p:hover{
+    color: var(--color-text);
 }
 .gpt5__navbar-links_logo {
     margin-right: 2rem;
@@ -30,6 +33,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.gpt5__navbar-sign p:hover {
+    color: var(--color-text);
 }
 
 .gpt5__navbar-links_container p,
@@ -59,7 +66,14 @@
     border-radius: 5px;
     border: 0;
     outline: none;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+.gpt5__navbar-sign button:hover,
+.gpt5__navbar-menu_container button:hover {
+    background-color: #742103;
+    color: #fff;
+    
 }
 
 .gpt5__navbar-menu {
@@ -95,6 +109,13 @@
 
 .gpt5__navbar-menu_container-links-sign {
     display: none;
+}
+
+.gpt5__navbar-menu_container-links-sign p:hover {
+    color: var(--color-text);
+}
+.gpt5__navbar-menu_container-links p:hover {
+    color: var(--color-text);
 }
 
 @media screen and (max-width: 1050px) {
