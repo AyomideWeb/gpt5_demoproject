@@ -12,13 +12,13 @@ const Blog = () => {
       </div>
       <div className='gpt5__blog-container'>
         <div className='gpt5__blog-container_groupA'>
-          <Article />
+          <Article imgUrl={blog01} date='Oct 20, 2023' title='GPT-5 and Open  AI is the future. Let us exlore how it is?'/>
         </div>
         <div className='gpt5__blog-container_groupB'>
-          <Article />
-          <Article />
-          <Article />
-          <Article />
+          <Article imgUrl={blog02} date='Oct 20, 2023' title='GPT-5 and Open  AI is the future. Let us exlore how it is?'/>
+          <Article imgUrl={blog03} date='Oct 20, 2023' title='GPT-5 and Open  AI is the future. Let us exlore how it is?'/>
+          <Article imgUrl={blog04} date='Oct 20, 2023' title='GPT-5 and Open  AI is the future. Let us exlore how it is?'/>
+          <Article imgUrl={blog05} date='Oct 20, 2023' title='GPT-5 and Open  AI is the future. Let us exlore how it is?'/>
         </div>
       </div>
     </div>
