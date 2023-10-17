@@ -1,0 +1,50 @@
+.gpt5__footer {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+
+.gpt5__footer-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gpt5__footer-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04rem;
+}
+.gpt5__footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.gpt5__footer-btn p {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+
+
+
+.gpt5__footer-links_logo h1 {
+    font-size: 25px;
+    color: #fff;
+}
