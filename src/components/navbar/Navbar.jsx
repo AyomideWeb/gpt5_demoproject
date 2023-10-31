@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logo.svg';
 import './navbar.css';
 
+// This component represents the menu items
 const Menu = () => (
     <>
         <p><a href="#home">Home</a></p>
@@ -13,6 +13,7 @@ const Menu = () => (
     </>
 )
 
+// This is the main Navbar component
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -23,6 +24,7 @@ const Navbar = () => {
                     <h1 >GPT-5</h1>
                 </div>
                 <div className='gpt5__navbar-links_container'>
+                    {/* Display the Menu component here */}
                     <Menu />
                 </div>
             </div>
@@ -31,13 +33,16 @@ const Navbar = () => {
                 <button type="button">Sign Up</button>
             </div>
             <div className='gpt5__navbar-menu'>
+                {/* Conditional rendering of menu icon based on the toggleMenu state */}
                 {toggleMenu
                     ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
                     : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)} />
                 }
+                {/* Display the menu container if toggleMenu is true */}
                 {toggleMenu && (
                     <div className='gpt5__navbar-menu_container scale-up-center'>
                         <div className='gpt5__navbar-menu_container-links'>
+                            {/* Display the Menu component inside the menu container */}
                             <Menu />
                             <div className='gpt5__navbar-menu_container-links-sign'>
                                 <p>Sign In</p>
